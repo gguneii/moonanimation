@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('img/bodyImg.jpg') center/cover;
+}
+.container{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sun img{
+    width: 130px;
+}
+.earth img{
+    width: 80px;
+}
+.moon img{
+    width: 50px;
+}
+.stars img{
+    width: 20px;
+}
+.sun{
+    animation: sun 65s infinite linear;
+}
+@keyframes sun {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.moon{
+    position: absolute;
+    top:50%; /* Distance from the center */
+    left:50%; /* Distance from the center */
+    animation: moon 40s infinite linear;
+}
+@keyframes moon {
+    0%{
+        transform: rotate(0deg) translate(120px) rotate(0deg);
+    }
+    100%{
+       transform: rotate(360deg) translate(120px) rotate(-360deg);
+    }
+    
+}
+.earth{
+    position: absolute;
+    top: 50%; /* Distance from the center */
+    left:50%; /* Distance from the center */
+    animation: earth 40s infinite linear;
+}
+@keyframes earth {
+    0%{
+        transform: rotate(0deg) translate(220px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) translate(220px) rotate(-360deg);
+    }
+    
+}
+.star1{
+    position:absolute;
+    top: 0%;
+    right: 0%;
+    animation: star1 8s  infinite linear;
+}
+@keyframes star1 {
+    0%{
+        top: 0%; right: 0%;
+
+    }
+    100%{
+        top: 40%; right: 50%; display: none;
+    }
+    
+}
+.star2{
+    position:absolute;
+    top: 0%;
+    right: 10%;
+    animation: star2 7s  infinite linear;
+}
+@keyframes star2 {
+    0%{
+        top: 0%; right: 10%;
+
+    }
+    100%{
+        top: 40%; right: 50%; display: none;
+    }
+    
+}
+.star3{
+    position:absolute;
+    top: 10%;
+    right: 20%;
+    animation: star3 9s  infinite linear;
+}
+@keyframes star3 {
+    0%{
+        top: 10%; right: 20%;
+
+    }
+    100%{
+        top: 40%; right: 50%; display: none;
+    }
+    
+}
