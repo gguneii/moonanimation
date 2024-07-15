@@ -39,8 +39,8 @@ body{
 }
 .moon{
     position: absolute;
-    top:50%; /* Distance from the center */
-    left:50%; /* Distance from the center */
+    top:50%;
+    left:50%; 
     animation: moon 40s infinite linear;
 }
 @keyframes moon {
@@ -54,8 +54,8 @@ body{
 }
 .earth{
     position: absolute;
-    top: 50%; /* Distance from the center */
-    left:50%; /* Distance from the center */
+    top: 50%; 
+    left:50%; 
     animation: earth 40s infinite linear;
 }
 @keyframes earth {
